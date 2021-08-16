@@ -10,7 +10,6 @@ const baseConfig = () => ({
     publicPath: '/',
     filename: 'scripts_bundle.js',
   },
-  devtool: 'source-map',
   devServer: {
     historyApiFallback: true,
   },
@@ -33,6 +32,7 @@ const baseConfig = () => ({
 });
 
 const devConfig = () => ({
+  devtool: 'source-map',
   module: {
     rules: [
       {
